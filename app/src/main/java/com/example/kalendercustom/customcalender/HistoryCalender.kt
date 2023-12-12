@@ -14,10 +14,12 @@
 
 package com.example.kalendercustom.customcalender
 
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.himanshoe.kalendar.ui.component.day.CalenderDayModifier
+import androidx.compose.ui.unit.dp
+import com.example.kalendercustom.components.day.CalenderDayModifier
 import kotlinx.datetime.Clock
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.TimeZone
@@ -87,12 +89,10 @@ fun Calender(
     ) {
     CustomWeekCalender(
         currentDay = currentDay,
-        modifier = modifier,
+        modifier = modifier.padding(8.dp),
         onDayClick = onDayClick,
         dayContent = dayContent,
-        headerContent = headerContent,
-
-        )
+        headerContent = headerContent)
 }
 
 @Preview

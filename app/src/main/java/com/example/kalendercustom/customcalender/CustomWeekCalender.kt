@@ -14,8 +14,6 @@
 
 package com.example.kalendercustom.customcalender
 
-import android.os.Build
-import androidx.annotation.RequiresApi
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -36,11 +34,11 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.kalendercustom.components.day.onDayClicked
 import com.example.kalendercustom.components.header.CustomCalenderHeaderUI
-import com.himanshoe.kalendar.ui.component.day.CalenderDayModifier
-import com.himanshoe.kalendar.ui.component.day.CustomCalenderDay
-import com.himanshoe.kalendar.ui.oceanic.util.getNext7Dates
-import com.himanshoe.kalendar.ui.oceanic.util.getPrevious7Dates
-import com.example.kalendercustom.util.MultiplePreviews
+import com.example.kalendercustom.components.day.CalenderDayModifier
+import com.example.kalendercustom.components.day.CustomCalenderDay
+import com.example.kalendercustom.components.ocenic.util.getNext7Dates
+import com.example.kalendercustom.components.ocenic.util.getPrevious7Dates
+import com.example.kalendercustom.util.annotationclass.MultiplePreviews
 import kotlinx.datetime.Clock
 import kotlinx.datetime.DateTimeUnit
 import kotlinx.datetime.DayOfWeek
@@ -69,7 +67,6 @@ import java.util.Locale
  * @param onRangeSelected The callback function when a range of days is selected.
  * @param onErrorRangeSelected The callback function when there is an error in selecting a range of days.
  */
-@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 internal fun CustomWeekCalender(
     modifier: Modifier = Modifier,
@@ -177,7 +174,6 @@ private fun getCurrentMonthAndYear(weekValue: List<LocalDate>): Pair<Month, Int>
     return Pair(month, year)
 }
 
-@RequiresApi(Build.VERSION_CODES.O)
 @MultiplePreviews
 @Composable
 fun CustomWeekCalenderPreview() {

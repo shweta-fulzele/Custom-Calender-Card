@@ -12,7 +12,7 @@
  *
  */
 
-package com.example.kalendercustom.util
+package com.example.kalendercustom.util.annotationclass
 
 import android.content.res.Configuration.UI_MODE_NIGHT_NO
 import android.content.res.Configuration.UI_MODE_NIGHT_YES

@@ -12,7 +12,7 @@
  *
  */
 
-package com.himanshoe.kalendar.ui.component.day
+package com.example.kalendercustom.components.day
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -31,7 +31,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.example.kalendercustom.util.MultiplePreviews
+import com.example.kalendercustom.util.annotationclass.MultiplePreviews
 import kotlinx.datetime.Clock
 import kotlinx.datetime.DateTimeUnit
 import kotlinx.datetime.LocalDate

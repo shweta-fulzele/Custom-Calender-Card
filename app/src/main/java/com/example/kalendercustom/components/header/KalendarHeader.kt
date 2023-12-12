@@ -44,12 +44,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.kalendercustom.util.MultiplePreviews
+import com.example.kalendercustom.ui.theme.Primary
+import com.example.kalendercustom.util.annotationclass.MultiplePreviews
 import kotlinx.datetime.Month
 import java.time.format.TextStyle
 import java.util.Locale
@@ -88,7 +88,7 @@ fun CustomCalenderHeaderUI(
 
             Row(
                 modifier = Modifier
-                    .fillMaxWidth()
+                    .fillMaxWidth().padding(vertical = 6.dp)
                     .align(Alignment.CenterVertically),
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
@@ -102,7 +102,7 @@ fun CustomCalenderHeaderUI(
                 ) {
                     Icon(
                         modifier = Modifier.size(30.dp),
-                        tint = Color(0xFF413D4B),
+                        tint = Primary,
                         imageVector = Icons.Filled.ArrowBack,
                         contentDescription = "Previous Month"
                     )
@@ -121,10 +121,10 @@ fun CustomCalenderHeaderUI(
                             .wrapContentHeight()
                             .wrapContentWidth()
                             .align(Alignment.CenterVertically),
-                        color = Color.Black,
-                        fontSize = 24.sp,
+                        color = Primary,
+                        fontSize = 28.sp,
                         text = targetText,
-                        fontWeight = FontWeight.SemiBold,
+                        fontWeight = FontWeight.Bold,
                         textAlign = TextAlign.Start
                     )
                 }
@@ -137,7 +137,7 @@ fun CustomCalenderHeaderUI(
                 ) {
                     Icon(
                         modifier = Modifier.size(30.dp),
-                        tint = Color(0xFF413D4B),
+                        tint = Primary,
                         imageVector = Icons.Filled.ArrowForward,
                         contentDescription = "Next Month"
                     )

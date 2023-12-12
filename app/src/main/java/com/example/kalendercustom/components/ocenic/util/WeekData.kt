@@ -12,7 +12,7 @@
  *
  */
 
-package com.himanshoe.kalendar.ui.oceanic.util
+package com.example.kalendercustom.components.ocenic.util
 
 import kotlinx.datetime.DateTimeUnit
 import kotlinx.datetime.LocalDate

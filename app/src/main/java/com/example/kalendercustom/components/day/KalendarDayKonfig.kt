@@ -12,7 +12,7 @@
  *
  */
 
-package com.himanshoe.kalendar.ui.component.day
+package com.example.kalendercustom.components.day
 
 import androidx.compose.runtime.Immutable
 import androidx.compose.ui.graphics.Color
@@ -20,6 +20,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.kalendercustom.ui.theme.Tertiary
 
 /**
  * Configuration data class for customizing the appearance of a Kalendar day.
@@ -42,9 +43,9 @@ data class CalenderDayModifier(
 
         @SuppressWarnings("MagicNumber")
         fun default() = CalenderDayModifier(
-            size = 56.dp,
-            textSize = 16.sp,
-            textColor = Color(0xFF413D4B),
+            size = 60.dp,
+            textSize = 18.sp,
+            textColor = Tertiary,
             selectedTextColor = Color.White
         )
     }

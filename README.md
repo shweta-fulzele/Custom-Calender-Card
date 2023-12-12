@@ -17,17 +17,39 @@ This repository showcases a custom calendar card implemented in Jetpack Compose 
 - **Reusable Components:** Reusable Jetpack Compose components are utilized to build the calendar card, promoting code reusability.
 - **Date-Time Functionality:** The calendar card includes functionality to display and interact with date and time.
 
-## Video 📸
+## Video 🎥
 
 [Custom Calendar Card Screen Recording.webm](https://github.com/shweta-fulzele/Custom-Calender-Card/assets/46936228/793ce4ce-7af3-44e9-8180-80a437265b9f)
 
 
 ## Getting Started 🚀
 
-Follow these steps to integrate the custom calendar card into your Jetpack Compose project:
+Follow these steps to get started with the Android App Starter Template:
 
-1. Clone the Repository:
+1. **Clone the Repository:**
+    Use the following command to clone the repository:
+
    ```bash
-   git clone https://github.com/your-username/custom-calendar-card.git
+   https://github.com/shweta-fulzele/Custom-Calender-Card.git
+   
+2. **Open in Android Studio:**
 
-Code Reference [Kalender](https://github.com/hi-manshu/Kalendar)
+     You can open the project in Android Studio and start building your app.
+
+3. **Customize and Extend:**
+
+     Could you customize the template to fit your app's branding and extend it with additional features?
+
+## Tech Stack 💻
+
+- [Jetpack Compose](https://developer.android.com/jetpack/compose/documentation): Modern Android UI toolkit.
+- [Kotlin](https://developer.android.com/kotlin?gclid=CjwKCAiApuCrBhAuEiwA8VJ6JmBS4wL691euXD7CTg7vDJ57ER_FZjobCqBvrNpBLKcUK_PErbaO0BoCoFQQAvD_BwE&gclsrc=aw.ds): Official programming language for Android development.
+
+## Acknowledgements 🙏
+Forked from [https://github.com/shweta-fulzele/Custom-Calender-Card](https://github.com/shweta-fulzele/Custom-Calender-Card) 
+
+## Code Reference 🙏
+ [Kalender](https://github.com/hi-manshu/Kalendar)
+
+**Happy Coding by Shweta Fulzele! 🚀**
+
